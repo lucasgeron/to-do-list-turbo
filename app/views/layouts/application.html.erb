@@ -12,8 +12,10 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <main class="container px-4 mx-auto mt-4 md:mt-28  shadow-lg">
+      <%= turbo_frame_tag "flash", class:'absolute top-8' %>
       <%= yield %>
     </main>
+    <%= render partial:'layouts/developed_by' %>
   </body>
 </html>

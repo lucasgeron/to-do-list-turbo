@@ -1,0 +1,11 @@
+<div class="p-4 relative space-y-4 bg-white rounded-lg">
+
+  <p class="font-bold text-2xl lg:text-4xl text-center py-4">To Do List Turbo</p>
+
+  <%= render "form", task: @task %>
+
+  <%= turbo_frame_tag "tasks", class:"grid gap-2" do %>
+    <%= render @tasks %>
+  <% end %>
+
+</div>

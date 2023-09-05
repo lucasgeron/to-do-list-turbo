@@ -1,0 +1,12 @@
+<%= form_with(model: task, class: "w-full sm:flex space-y-2 md:space-y-0 items-start justify-between gap-2", data: { turbo_stream: true }) do |form| %>
+
+  <div class="grow">
+    <%= form.text_field :description, placeholder:'Insert your Task', class: "block rounded-md border border-gray-200 outline-none w-full" %>
+  </div>
+
+  <div class="flex gap-2">
+    <%= link_to "Cancel", tasks_path, class:'btn-secondary w-full text-center' if action_name == 'edit'%>
+    <%= form.submit class: "btn-primary w-full" %>
+  </div>
+
+<% end %>
