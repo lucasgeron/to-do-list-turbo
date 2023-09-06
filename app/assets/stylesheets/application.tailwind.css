@@ -4,6 +4,55 @@
 
 
 @layer components {
+
+  body {
+    @apply bg-gray-700;
+  }
+
+  .container {
+    @apply px-4 mx-auto mt-4 md:mt-28 shadow-lg;
+  }
+
+  .inner-container {
+    @apply p-4 relative space-y-4 bg-white rounded-lg;
+  }
+
+  .contents {
+    @apply w-full space-y-2 md:space-y-0 items-start justify-between gap-2;
+  }
+
+  .task {
+    @apply w-full space-y-2 md:space-y-0 md:flex items-center;
+  }
+
+  .task-container{
+    @apply flex md:grow items-center justify-between gap-2;
+  }
+  
+  .task-icon {
+    @apply rounded-lg py-2 px-2.5 bg-gray-100 inline-block font-medium;
+  }
+
+  .task-content {
+    @apply grow flex items-center justify-between rounded-md border outline-none w-4/5 py-2.5 px-4 my-auto;
+  }
+  
+  .task-badge {
+    @apply rounded-md border outline-none py-0.5 px-2 my-auto  items-center bg-blue-100 border-blue-400 text-blue-700  text-xs sm:text-sm;
+  }
+
+  .task-buttons {
+    @apply flex items-center justify-between gap-2;
+  }
+
+  .title {
+    @apply font-bold text-2xl lg:text-4xl text-center py-4;
+  }
+
+  .form-input {
+    @apply block rounded-md border border-gray-200 outline-none w-full;
+  }
+
   .btn-primary {
     @apply  rounded-lg py-2.5 px-5 bg-blue-600 hover:bg-blue-700  text-white inline-block font-medium cursor-pointer;
   }
@@ -17,9 +66,4 @@
     @apply  rounded-lg py-2.5 px-5 bg-gray-100 hover:bg-gray-200   inline-block font-medium cursor-pointer;
   }
 
-  body {
-    @apply bg-gray-700;
-  }
-  
 }
-

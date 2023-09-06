@@ -1,11 +1,10 @@
-<div class="p-4 relative space-y-4 bg-white rounded-lg">
+<div class="inner-container">
 
-  <p class="font-bold text-2xl lg:text-4xl text-center py-4">To Do List Turbo</p>
+  <h1 class="title">Tasks</h1>
 
   <%= render "form", task: @task %>
 
-  <%= turbo_frame_tag "tasks", class:"grid gap-2" do %>
+  <div id="tasks" class="grid gap-2">
     <%= render @tasks %>
-  <% end %>
-
+  </div>
 </div>

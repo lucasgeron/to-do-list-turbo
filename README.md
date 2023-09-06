@@ -1,6 +1,6 @@
 # To Do List Turbo
 
-![To do list turbo demo](https://i.ibb.co/7RWMJwk/20230905-190017-2.gif)
+![To do list turbo demo](https://i.ibb.co/Ydyx6RS/20230906-142125.gif)
 
 To Do List Turbo is a simple to do list application that allows you to create, edit, and delete tasks. It also allows you to mark tasks as complete and incomplete. This application uses the Hotwire Turbo framework.
 
